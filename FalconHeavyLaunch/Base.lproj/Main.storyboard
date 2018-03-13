@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FalconHeavyLaunch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScene" translatesAutoresizingMaskIntoConstraints="NO" id="bNe-Ws-ee2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTB-y6-2lf">
+                                <rect key="frame" x="55" y="378" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="86x-EF-3q9"/>
+                                    <constraint firstAttribute="height" constant="30" id="dlC-Ez-Xdj"/>
+                                </constraints>
+                                <state key="normal" image="ResetBox">
+                                    <color key="titleColor" red="0.98450338939804705" green="1" blue="0.41529813255383863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonPresed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nZy-z8-ilw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FalconHeavy" translatesAutoresizingMaskIntoConstraints="NO" id="1ZD-Tn-gcb">
+                                <rect key="frame" x="131.66666666666666" y="161.66666666666663" width="150.99999999999997" height="992.99999999999989"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOj-jO-CBS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <state key="normal" image="LaunchButton"/>
+                                <connections>
+                                    <action selector="launchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0DO-tq-eUc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bNe-Ws-ee2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2oi-6R-8CD"/>
+                            <constraint firstItem="1ZD-Tn-gcb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2vi-yH-Ogf"/>
+                            <constraint firstItem="bNe-Ws-ee2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EJ2-LY-oT2"/>
+                            <constraint firstItem="bNe-Ws-ee2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fur-CH-I3W"/>
+                            <constraint firstItem="cOj-jO-CBS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OMP-kv-l0S"/>
+                            <constraint firstItem="bNe-Ws-ee2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VvX-yd-4Sb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dTB-y6-2lf" secondAttribute="trailing" constant="279" id="aNn-zD-SXk"/>
+                            <constraint firstItem="cOj-jO-CBS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="anH-kj-Kcc"/>
+                            <constraint firstItem="cOj-jO-CBS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="f3f-96-6EX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dTB-y6-2lf" secondAttribute="bottom" constant="328" id="ivk-JP-oGv"/>
+                            <constraint firstItem="1ZD-Tn-gcb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="290" id="sIJ-v3-2Ct"/>
+                            <constraint firstItem="cOj-jO-CBS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="u42-WF-jFQ"/>
+                            <constraint firstItem="bNe-Ws-ee2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wvp-YU-oHT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="falconHeavyImage" destination="1ZD-Tn-gcb" id="lL3-1N-9vn"/>
+                        <outlet property="launchButtonView" destination="cOj-jO-CBS" id="5BW-o0-XiG"/>
+                        <outlet property="resetButtonView" destination="dTB-y6-2lf" id="lXj-2r-Ciw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FalconHeavy" width="151" height="993"/>
+        <image name="LaunchButton" width="748" height="1339"/>
+        <image name="LaunchScene" width="748" height="1339"/>
+        <image name="ResetBox" width="211" height="81"/>
+    </resources>
+</document>
